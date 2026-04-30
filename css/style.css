@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #050505;
+  color: #f5f5f5;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #050505;
+  border-bottom: 1px solid #2a2a2a;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 22px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 28px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 22px;
+}
+
+.nav-links a {
+  color: #d8d8d8;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 4px;
+}
+
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero {
+  min-height: 85vh;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+  padding: 70px 0;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #bdbdbd;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.hero h1,
+.page-header h1 {
+  font-size: 64px;
+  line-height: 1.05;
+  font-weight: 400;
+  margin-bottom: 22px;
+}
+
+.hero p,
+.intro-section p,
+.about-text p,
+.interests-text p,
+.contact-section p {
+  color: #d0d0d0;
+  font-size: 18px;
+}
+
+.hero-image img,
+.about-image img {
+  width: 100%;
+  max-height: 620px;
+  object-fit: cover;
+  border: 1px solid #333333;
+  filter: grayscale(15%);
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 16px;
+}
+
+.button {
+  padding: 12px 24px;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+.primary {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.secondary {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.button:hover,
+.contact-form button:hover {
+  opacity: 0.75;
+}
+
+.intro-section,
+.work-section,
+.table-section,
+.leadership-section,
+.interests-text,
+.video-section,
+.contact-section,
+.external-link-section {
+  padding: 50px 0;
+}
+
+.page-header {
+  text-align: center;
+  padding: 70px 0 40px;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.page-header p {
+  color: #bdbdbd;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 50px;
+  padding: 60px 0;
+  align-items: start;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+  margin: 28px 0 12px;
+}
+
+ul {
+  margin-left: 24px;
+  color: #d0d0d0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.location {
+  color: #bdbdbd;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.skills-list {
+  margin-top: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+  background-color: #0d0d0d;
+}
+
+th,
+td {
+  border: 1px solid #333333;
+  padding: 18px;
+  text-align: left;
+}
+
+th {
+  background-color: #ffffff;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.leadership-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.leadership-card {
+  border: 1px solid #333333;
+  padding: 30px;
+  background-color: #0d0d0d;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  padding: 40px 0;
+}
+
+.gallery img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border: 1px solid #333333;
+  filter: grayscale(20%) contrast(105%);
+}
+
+.video-section video {
+  margin-top: 20px;
+  border: 1px solid #333333;
+  max-height: 500px;
+  background-color: #000000;
+}
+
+.contact-section {
+  max-width: 700px;
+  margin: auto;
+}
+
+.email-link a,
+.external-link-section a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.contact-form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-form label {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+  color: #dcdcdc;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #0d0d0d;
+  border: 1px solid #333333;
+  color: #ffffff;
+  padding: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.contact-form button {
+  margin-top: 10px;
+  padding: 14px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid #2a2a2a;
+  padding: 24px;
+  color: #a8a8a8;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 850px) {
+  .navbar,
+  .nav-links,
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    margin-top: 18px;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .hero,
+  .about-container,
+  .leadership-section,
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1,
+  .page-header h1 {
+    font-size: 44px;
+  }
+
+  .gallery img {
+    height: 420px;
+  }
+}
+.logo-section {
+  padding: 70px 0;
+  border-top: 1px solid #2a2a2a;
+  border-bottom: 1px solid #2a2a2a;
+  text-align: center;
+}
+
+.logo-section h2 {
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.logo-section p {
+  color: #cfcfcf;
+  margin-bottom: 35px;
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 22px;
+  align-items: center;
+}
+
+.logo-grid a {
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 18px;
+  height: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.logo-grid a:hover {
+  transform: translateY(-6px);
+  opacity: 0.8;
+}
+
+.logo-grid img {
+  max-width: 100%;
+  max-height: 75px;
+  object-fit: contain;
+}
+
+.company-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  scroll-margin-top: 120px;
+}
+
+.company-heading img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  background-color: #ffffff;
+  padding: 6px;
+  border: 2px solid #ffffff;
+}
+
+@media screen and (max-width: 850px) {
+  .logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .company-heading {
+    align-items: flex-start;
+  }
+}
